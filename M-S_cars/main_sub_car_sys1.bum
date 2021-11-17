@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1607997649372" org.eventb.texttools.text_representation="machine main_sub_car_sys1 refines main_sub_car_sys  sees static_properties&#10;&#10;variables mI mPWM sI sPWM ifChange_dist&#10;dist mdata sdata msd curTime&#10;//辆车举例判断 如果距离改变 从车输出 ！全局时间！&#10;invariants&#10;  @1 dist∈ℕ&#10;  @2 mdata∈datatype&#10;  @3 sdata∈datatype&#10;  @inv1 msd∈datatype&#10;  @12 ifChange_dist∈BOOL&#10;  @13 curTime∈ℕ&#10;  @inv14 curTime≥0&#10;&#10;events&#10;  event INITIALISATION extends INITIALISATION&#10;    then&#10;      @act5 dist≔DISTANCE&#10;      @act6 ifChange_dist≔FALSE&#10;      @act7 mdata≔DATA0&#10;      @act8 sdata≔DATA0&#10;      @act9 msd≔DATA0&#10;      @ACT10 curTime≔0&#10;&#10;  end&#10;&#10;  event maincar_cmp extends maincar_cmp&#10;  end&#10;&#10;  event subcar_cmp extends subcar_cmp&#10;    where&#10;      @1 ifChange_dist=TRUE&#10;  end&#10;&#10;  event sc_dist_cmp&#10;    where&#10;      @22 dist≠DISTANCE&#10;    then&#10;      @3 ifChange_dist≔TRUE&#10;  end&#10;&#10;   event TickTock&#10;    then&#10;      @act1 curTime≔curTime+1&#10;  end&#10;end&#10;" version="5">
+    <org.eventb.core.refinesMachine name="'" org.eventb.core.target="main_sub_car_sys"/>
+    <org.eventb.core.seesContext name="_hJUG8OtYEeqSCN5BTJuvkw" org.eventb.core.target="static_properties"/>
+    <org.eventb.core.variable name="_GGMDgOw3EeqXI5MX_kpycQ" org.eventb.core.generated="false" org.eventb.core.identifier="mI"/>
+    <org.eventb.core.variable name="_hi2y4OtZEeqSCN5BTJuvkw" org.eventb.core.generated="false" org.eventb.core.identifier="mPWM"/>
+    <org.eventb.core.variable name="_BRa0YOtwEeqSCN5BTJuvkw" org.eventb.core.generated="false" org.eventb.core.identifier="sI"/>
+    <org.eventb.core.variable name="_hi3Z8etZEeqSCN5BTJuvkw" org.eventb.core.generated="false" org.eventb.core.identifier="sPWM"/>
+    <org.eventb.core.event name="_hi3Z8etZEeqSCN5BTJuvkx" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="_6B_bsD3hEeuBjr-cya2exQ" org.eventb.core.assignment="dist≔DISTANCE" org.eventb.core.generated="false" org.eventb.core.label="act5"/>
+        <org.eventb.core.action name="_OyVeID3iEeuBjr-cya2exQ" org.eventb.core.assignment="ifChange_dist≔FALSE" org.eventb.core.generated="false" org.eventb.core.label="act6"/>
+        <org.eventb.core.action name="_M0WugD3iEeuBjr-cya2exQ" org.eventb.core.assignment="mdata≔DATA0" org.eventb.core.generated="false" org.eventb.core.label="act7"/>
+        <org.eventb.core.action name="_M0WugT3iEeuBjr-cya2exQ" org.eventb.core.assignment="sdata≔DATA0" org.eventb.core.generated="false" org.eventb.core.label="act8"/>
+        <org.eventb.core.action name="_M0Wugj3iEeuBjr-cya2exQ" org.eventb.core.assignment="msd≔DATA0" org.eventb.core.generated="false" org.eventb.core.label="act9"/>
+        <org.eventb.core.action name="_FD16YD30EeuBjr-cya2exQ" org.eventb.core.assignment="curTime≔0" org.eventb.core.generated="false" org.eventb.core.label="act10"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_hi3Z8etZEeqSCN5BTJuvky" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="maincar_cmp">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="maincar_cmp"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="mPWM≔mcomputation(mI)" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_hi3Z8etZEeqSCN5BTJuvkz" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="subcar_cmp">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="subcar_cmp"/>
+        <org.eventb.core.guard name="__NVrQuwIEeqSCN5BTJuvkw" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="ifChange_dist=TRUE"/>
+        <org.eventb.core.action name="__NVrQuwIEeqSCN5BTJuvkx" org.eventb.core.assignment="sPWM≔scomputation(sI)" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="__NVEMOwIEeqSCN5BTJuvkw" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="sc_dist_cmp">
+        <org.eventb.core.guard name="_bxN-oOwNEeqSCN5BTJuvkw" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="dist≠DISTANCE"/>
+        <org.eventb.core.action name="_bxOlsOwNEeqSCN5BTJuvkw" org.eventb.core.assignment="ifChange_dist≔TRUE" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable name="_qbY3kOwOEeqSCN5BTJuvkw" org.eventb.core.generated="false" org.eventb.core.identifier="ifChange_dist"/>
+    <org.eventb.core.variable name="_tPXtMOwxEeqXI5MX_kpycQ" org.eventb.core.generated="false" org.eventb.core.identifier="dist"/>
+    <org.eventb.core.variable name="_tPYUQOwxEeqXI5MX_kpycQ" org.eventb.core.generated="false" org.eventb.core.identifier="mdata"/>
+    <org.eventb.core.variable name="_tPYUQewxEeqXI5MX_kpycQ" org.eventb.core.generated="false" org.eventb.core.identifier="sdata"/>
+    <org.eventb.core.invariant name="_tPYUROwxEeqXI5MX_kpycQ" org.eventb.core.generated="false" org.eventb.core.label="inv5" org.eventb.core.predicate="dist∈ℕ"/>
+    <org.eventb.core.invariant name="_tPY7UOwxEeqXI5MX_kpycQ" org.eventb.core.generated="false" org.eventb.core.label="inv6" org.eventb.core.predicate="mdata∈datatype"/>
+    <org.eventb.core.invariant name="_tPY7UewxEeqXI5MX_kpycQ" org.eventb.core.generated="false" org.eventb.core.label="inv7" org.eventb.core.predicate="sdata∈datatype"/>
+    <org.eventb.core.invariant name="_tPZiYewxEeqXI5MX_kpycT" org.eventb.core.generated="false" org.eventb.core.label="inv8" org.eventb.core.predicate="msd∈datatype"/>
+    <org.eventb.core.invariant name="_1klPMOwyEeqXI5MX_kpycQ" org.eventb.core.generated="false" org.eventb.core.label="inv9" org.eventb.core.predicate="ifChange_dist∈BOOL"/>
+    <org.eventb.core.variable name="_tPZiYewxEeqXI5MX_kpycS" org.eventb.core.generated="false" org.eventb.core.identifier="msd"/>
+    <org.eventb.core.variable name="_FD5kwD30EeuBjr-cya2exQ" org.eventb.core.comment="辆车举例判断 如果距离改变 从车输出 ！全局时间！" org.eventb.core.generated="false" org.eventb.core.identifier="curTime"/>
+    <org.eventb.core.invariant name="_FD5kwT30EeuBjr-cya2exQ" org.eventb.core.generated="false" org.eventb.core.label="inv10" org.eventb.core.predicate="curTime∈ℕ"/>
+    <org.eventb.core.event name="_FD6L0D30EeuBjr-cya2exQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="TickTock">
+        <org.eventb.core.action name="_FD6L0T30EeuBjr-cya2exQ" org.eventb.core.assignment="curTime≔curTime+1" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name="_FD6L0T30EeuBjr-cya2exR" org.eventb.core.label="grd1" org.eventb.core.predicate="curTime+1∈ℕ"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1607932874103" org.eventb.texttools.text_representation="machine main_sub_car_sys sees static_properties&#10;&#10;variables mI mPWM sI sPWM //主从车输入输出过程&#10;&#10;invariants&#10;  @1 mI∈minput&#10;  @4 mPWM∈maincarPWM&#10;  @6 sI∈sinput&#10;  @7 sPWM∈subcarPWM&#10;&#10;events&#10;  event INITIALISATION&#10;  then&#10;    @act1 mI≔MI&#10;     @act2 sI≔SI&#10;     @act3 mPWM≔MPWM&#10;     @act4 sPWM≔SPWM&#10;  end&#10;&#10;  event maincar_cmp&#10;    then&#10;      @act1 mPWM≔mcomputation(mI)&#10;  end&#10;&#10;  event subcar_cmp&#10;    then&#10;      @9 sPWM≔scomputation(sI)&#10;  end&#10;end&#10;" version="5">
+    <org.eventb.core.seesContext name="_hJUG8OtYEeqSCN5BTJuvkw" org.eventb.core.target="static_properties"/>
+    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="mI≔MI" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="_i0O7oD3hEeuBjr-cya2exQ" org.eventb.core.assignment="sI≔SI" org.eventb.core.generated="false" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="_03GrMD3hEeuBjr-cya2exQ" org.eventb.core.assignment="mPWM≔MPWM" org.eventb.core.generated="false" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="_03GrMT3hEeuBjr-cya2exQ" org.eventb.core.assignment="sPWM≔SPWM" org.eventb.core.generated="false" org.eventb.core.label="act4"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable name="_D3LOQOw3EeqXI5MX_kpycQ" org.eventb.core.generated="false" org.eventb.core.identifier="mI"/>
+    <org.eventb.core.variable name="_hi2y4OtZEeqSCN5BTJuvkw" org.eventb.core.generated="false" org.eventb.core.identifier="mPWM"/>
+    <org.eventb.core.variable name="_BRa0YOtwEeqSCN5BTJuvkw" org.eventb.core.generated="false" org.eventb.core.identifier="sI"/>
+    <org.eventb.core.variable name="_hi3Z8etZEeqSCN5BTJuvkw" org.eventb.core.comment="主从车输入输出过程" org.eventb.core.generated="false" org.eventb.core.identifier="sPWM"/>
+    <org.eventb.core.event name="_FbiJkOteEeqSCN5BTJuvkw" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="maincar_cmp">
+        <org.eventb.core.action name="_i0QJwD3hEeuBjr-cya2exQ" org.eventb.core.assignment="mPWM≔mcomputation(mI)" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_FbiJketeEeqSCN5BTJuvkw" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="subcar_cmp">
+        <org.eventb.core.action name="_BRcCgOtwEeqSCN5BTJuvkw" org.eventb.core.assignment="sPWM≔scomputation(sI)" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.invariant name="_D3McYOw3EeqXI5MX_kpycQ" org.eventb.core.generated="false" org.eventb.core.label="inv1" org.eventb.core.predicate="mI∈minput"/>
+    <org.eventb.core.invariant name="_L4oK8ewxEeqXI5MX_kpycQ" org.eventb.core.generated="false" org.eventb.core.label="inv2" org.eventb.core.predicate="mPWM∈maincarPWM"/>
+    <org.eventb.core.invariant name="_L4oyAOwxEeqXI5MX_kpycQ" org.eventb.core.generated="false" org.eventb.core.label="inv3" org.eventb.core.predicate="sI∈sinput"/>
+    <org.eventb.core.invariant name="_L4oyAewxEeqXI5MX_kpycQ" org.eventb.core.generated="false" org.eventb.core.label="inv4" org.eventb.core.predicate="sPWM∈subcarPWM"/>
+</org.eventb.core.machineFile>
