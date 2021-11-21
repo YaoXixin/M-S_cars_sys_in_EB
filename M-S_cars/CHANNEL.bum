@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile ch.ethz.eventb.decomposition.decomposed="true" org.eventb.core.configuration="ch.ethz.eventb.decomposition.mchBase" org.eventb.core.generated="true" version="5">
+    <org.eventb.core.variable name="'" org.eventb.core.identifier="alarmmsg"/>
+    <org.eventb.core.variable name="(" org.eventb.core.identifier="mdatamsg"/>
+    <org.eventb.core.variable name=")" org.eventb.core.identifier="msd"/>
+    <org.eventb.core.variable name="*" org.eventb.core.identifier="sent_msg"/>
+    <org.eventb.core.variable name="+" org.eventb.core.identifier="chan_msg"/>
+    <org.eventb.core.variable name="," org.eventb.core.identifier="cons_msg"/>
+    <org.eventb.core.variable name="-" org.eventb.core.identifier="unalarmmsg"/>
+    <org.eventb.core.invariant name="." org.eventb.core.label="typing_alarmmsg" org.eventb.core.predicate="alarmmsg ∈ msg" org.eventb.core.theorem="true"/>
+    <org.eventb.core.invariant name="/" org.eventb.core.label="typing_unalarmmsg" org.eventb.core.predicate="unalarmmsg ∈ msg" org.eventb.core.theorem="true"/>
+    <org.eventb.core.invariant name="0" org.eventb.core.label="typing_chan_msg" org.eventb.core.predicate="chan_msg ∈ ℙ(msg)" org.eventb.core.theorem="true"/>
+    <org.eventb.core.invariant name="1" org.eventb.core.label="typing_sent_msg" org.eventb.core.predicate="sent_msg ∈ ℙ(msg)" org.eventb.core.theorem="true"/>
+    <org.eventb.core.invariant name="2" org.eventb.core.label="typing_cons_msg" org.eventb.core.predicate="cons_msg ∈ ℙ(msg)" org.eventb.core.theorem="true"/>
+    <org.eventb.core.invariant name="3" org.eventb.core.label="typing_mdatamsg" org.eventb.core.predicate="mdatamsg ∈ msg" org.eventb.core.theorem="true"/>
+    <org.eventb.core.invariant name="4" org.eventb.core.label="typing_msd" org.eventb.core.predicate="msd ∈ datatype" org.eventb.core.theorem="true"/>
+    <org.eventb.core.event name="5" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="msd≔DATA0" org.eventb.core.label="act9"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="alarmmsg≔MSG0" org.eventb.core.label="act20"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="mdatamsg≔MSG0" org.eventb.core.label="act13"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="sent_msg≔∅" org.eventb.core.label="act14"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="chan_msg≔∅" org.eventb.core.label="act15"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="cons_msg≔∅" org.eventb.core.label="act16"/>
+        <org.eventb.core.action name="-" org.eventb.core.assignment="unalarmmsg≔MSG0" org.eventb.core.label="act17"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="6" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="send_alarm">
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="alarmmsg∉sent_msg"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="sent_msg≔sent_msg∪{alarmmsg}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="chan_msg≔chan_msg∪{alarmmsg}" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="7" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="rsv_mdatamsg">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="mdatamsg∈chan_msg"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="chan_msg≔chan_msg∖{mdatamsg}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="cons_msg≔cons_msg∪ {mdatamsg}" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="8" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="send_mdatamsg">
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="mdatamsg∉sent_msg"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="sent_msg≔sent_msg∪{mdatamsg}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="chan_msg≔chan_msg∪{mdatamsg}" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="9" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="rsv_alarm">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="alarmmsg∈chan_msg"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="chan_msg≔chan_msg∖{alarmmsg}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="cons_msg≔cons_msg∪ {alarmmsg}" org.eventb.core.label="act4"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name=":" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="send_unalarm">
+        <org.eventb.core.action name="*" org.eventb.core.assignment="sent_msg≔sent_msg∪{unalarmmsg}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="chan_msg≔chan_msg∪{unalarmmsg}" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name=";" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="rsv_unalarm">
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="unalarmmsg∈chan_msg"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="chan_msg≔chan_msg∖{unalarmmsg}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="cons_msg≔cons_msg∪ {unalarmmsg}" org.eventb.core.label="act5"/>
+    </org.eventb.core.event>
+    <org.eventb.core.seesContext name="=" org.eventb.core.target="static_properties"/>
+</org.eventb.core.machineFile>

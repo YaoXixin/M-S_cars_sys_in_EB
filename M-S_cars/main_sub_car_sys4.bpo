@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="5">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="maincarPWM" org.eventb.core.type="ℙ(maincarPWM)"/>
+        <org.eventb.core.poIdentifier name="datatype" org.eventb.core.type="ℙ(datatype)"/>
+        <org.eventb.core.poIdentifier name="minput" org.eventb.core.type="ℙ(minput)"/>
+        <org.eventb.core.poIdentifier name="sinput" org.eventb.core.type="ℙ(sinput)"/>
+        <org.eventb.core.poIdentifier name="subcarPWM" org.eventb.core.type="ℙ(subcarPWM)"/>
+        <org.eventb.core.poIdentifier name="msg" org.eventb.core.type="ℙ(msg)"/>
+        <org.eventb.core.poIdentifier name="mcomputation" org.eventb.core.type="ℙ(minput×maincarPWM)"/>
+        <org.eventb.core.poIdentifier name="MSG0" org.eventb.core.type="msg"/>
+        <org.eventb.core.poIdentifier name="dist_period" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="MI" org.eventb.core.type="minput"/>
+        <org.eventb.core.poIdentifier name="MAXDIST" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="SPWM" org.eventb.core.type="subcarPWM"/>
+        <org.eventb.core.poIdentifier name="scomputation" org.eventb.core.type="ℙ(sinput×subcarPWM)"/>
+        <org.eventb.core.poIdentifier name="SI" org.eventb.core.type="sinput"/>
+        <org.eventb.core.poIdentifier name="DISTANCE" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="DATA0" org.eventb.core.type="datatype"/>
+        <org.eventb.core.poIdentifier name="syc_period" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="alarm_T2" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="MPWM" org.eventb.core.type="maincarPWM"/>
+        <org.eventb.core.poPredicate name="scomputatioo" org.eventb.core.predicate="DISTANCE∈ℕ" org.eventb.core.source="/cars/static_properties.buc|org.eventb.core.contextFile#static_properties|org.eventb.core.axiom#_fY0RgOapEeqSE4gyCvo7IQ"/>
+        <org.eventb.core.poPredicate name="scomputatiop" org.eventb.core.predicate="alarm_T2∈ℕ" org.eventb.core.source="/cars/static_properties.buc|org.eventb.core.contextFile#static_properties|org.eventb.core.axiom#_Iz73MDhqEeufTrT1KShNyw"/>
+        <org.eventb.core.poPredicate name="scomputatioq" org.eventb.core.predicate="dist_period∈ℕ" org.eventb.core.source="/cars/static_properties.buc|org.eventb.core.contextFile#static_properties|org.eventb.core.axiom#_bKvr4DhpEeufTrT1KShNyw"/>
+        <org.eventb.core.poPredicate name="scomputatior" org.eventb.core.predicate="dist_period&gt;0" org.eventb.core.source="/cars/static_properties.buc|org.eventb.core.contextFile#static_properties|org.eventb.core.axiom#_O1tzMD3rEeuBjr-cya2exQ"/>
+        <org.eventb.core.poPredicate name="scomputatios" org.eventb.core.predicate="MAXDIST∈ℕ" org.eventb.core.source="/cars/static_properties.buc|org.eventb.core.contextFile#static_properties|org.eventb.core.axiom#_tGMRMOtvEeqSCN5BTJuvkw"/>
+        <org.eventb.core.poPredicate name="scomputatiot" org.eventb.core.predicate="MI∈minput" org.eventb.core.source="/cars/static_properties.buc|org.eventb.core.contextFile#static_properties|org.eventb.core.axiom#_c378UD3hEeuBjr-cya2exQ"/>
+        <org.eventb.core.poPredicate name="scomputatiou" org.eventb.core.predicate="SI∈sinput" org.eventb.core.source="/cars/static_properties.buc|org.eventb.core.contextFile#static_properties|org.eventb.core.axiom#_c38jYD3hEeuBjr-cya2exQ"/>
+        <org.eventb.core.poPredicate name="scomputatiov" org.eventb.core.predicate="MPWM∈maincarPWM" org.eventb.core.source="/cars/static_properties.buc|org.eventb.core.contextFile#static_properties|org.eventb.core.axiom#_y7y1ED3hEeuBjr-cya2exQ"/>
+        <org.eventb.core.poPredicate name="scomputatiow" org.eventb.core.predicate="SPWM∈subcarPWM" org.eventb.core.source="/cars/static_properties.buc|org.eventb.core.contextFile#static_properties|org.eventb.core.axiom#_y7zcID3hEeuBjr-cya2exQ"/>
+        <org.eventb.core.poPredicate name="scomputatiox" org.eventb.core.predicate="DATA0∈datatype" org.eventb.core.source="/cars/static_properties.buc|org.eventb.core.contextFile#static_properties|org.eventb.core.axiom#_GNo5MD3iEeuBjr-cya2exQ"/>
+        <org.eventb.core.poPredicate name="scomputatioy" org.eventb.core.predicate="MSG0∈msg" org.eventb.core.source="/cars/static_properties.buc|org.eventb.core.contextFile#static_properties|org.eventb.core.axiom#_5o-CQD3iEeuBjr-cya2exQ"/>
+        <org.eventb.core.poPredicate name="scomputatioz" org.eventb.core.predicate="mcomputation∈minput → maincarPWM" org.eventb.core.source="/cars/static_properties.buc|org.eventb.core.contextFile#static_properties|org.eventb.core.axiom#_7JuaIOwvEeqXI5MX_kpycQ"/>
+        <org.eventb.core.poPredicate name="scomputatio{" org.eventb.core.predicate="scomputation∈sinput → subcarPWM" org.eventb.core.source="/cars/static_properties.buc|org.eventb.core.contextFile#static_properties|org.eventb.core.axiom#_7JvBMewvEeqXI5MX_kpycQ"/>
+        <org.eventb.core.poPredicate name="scomputatio|" org.eventb.core.predicate="∀x⦂ℤ·x∈ℕ⇒x+1∈ℕ" org.eventb.core.source="/cars/static_properties.buc|org.eventb.core.contextFile#static_properties|org.eventb.core.axiom#_47-N0D3sEeuBjr-cya2exQ"/>
+        <org.eventb.core.poPredicate name="scomputatio}" org.eventb.core.predicate="dist_period≠0" org.eventb.core.source="/cars/static_properties.buc|org.eventb.core.contextFile#static_properties|org.eventb.core.axiom#_y7zcID3hEeuBjr-cya2exR"/>
+        <org.eventb.core.poPredicate name="scomputatio~" org.eventb.core.predicate="syc_period≠0" org.eventb.core.source="/cars/static_properties.buc|org.eventb.core.contextFile#static_properties|org.eventb.core.axiom#_y7zcID3hEeuBjr-cya2exT"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="sdata" org.eventb.core.type="datatype"/>
+        <org.eventb.core.poIdentifier name="if_rsvmdata" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="sent_msg" org.eventb.core.type="ℙ(msg)"/>
+        <org.eventb.core.poIdentifier name="unalarmmsg" org.eventb.core.type="msg"/>
+        <org.eventb.core.poIdentifier name="ifChange_dist" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="curTime" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="mdatamsg" org.eventb.core.type="msg"/>
+        <org.eventb.core.poIdentifier name="if_wait" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="cons_msg" org.eventb.core.type="ℙ(msg)"/>
+        <org.eventb.core.poIdentifier name="mPWM" org.eventb.core.type="maincarPWM"/>
+        <org.eventb.core.poIdentifier name="tt_dist" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="ifAlarmM" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="ifAlarmS" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="curTime1" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="curTime2" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="flag_dist" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="chan_msg" org.eventb.core.type="ℙ(msg)"/>
+        <org.eventb.core.poIdentifier name="cT_dist" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="mI" org.eventb.core.type="minput"/>
+        <org.eventb.core.poIdentifier name="dist" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="sPWM" org.eventb.core.type="subcarPWM"/>
+        <org.eventb.core.poIdentifier name="sI" org.eventb.core.type="sinput"/>
+        <org.eventb.core.poIdentifier name="alarmmsg" org.eventb.core.type="msg"/>
+        <org.eventb.core.poIdentifier name="alarm_t" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="i_dist" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="msd" org.eventb.core.type="datatype"/>
+        <org.eventb.core.poIdentifier name="mdata" org.eventb.core.type="datatype"/>
+        <org.eventb.core.poPredicate name="ifChange_disu" org.eventb.core.predicate="mI∈minput" org.eventb.core.source="/cars/main_sub_car_sys.bum|org.eventb.core.machineFile#main_sub_car_sys|org.eventb.core.invariant#_D3McYOw3EeqXI5MX_kpycQ"/>
+        <org.eventb.core.poPredicate name="ifChange_disv" org.eventb.core.predicate="mPWM∈maincarPWM" org.eventb.core.source="/cars/main_sub_car_sys.bum|org.eventb.core.machineFile#main_sub_car_sys|org.eventb.core.invariant#_L4oK8ewxEeqXI5MX_kpycQ"/>
+        <org.eventb.core.poPredicate name="ifChange_disw" org.eventb.core.predicate="sI∈sinput" org.eventb.core.source="/cars/main_sub_car_sys.bum|org.eventb.core.machineFile#main_sub_car_sys|org.eventb.core.invariant#_L4oyAOwxEeqXI5MX_kpycQ"/>
+        <org.eventb.core.poPredicate name="ifChange_disx" org.eventb.core.predicate="sPWM∈subcarPWM" org.eventb.core.source="/cars/main_sub_car_sys.bum|org.eventb.core.machineFile#main_sub_car_sys|org.eventb.core.invariant#_L4oyAewxEeqXI5MX_kpycQ"/>
+        <org.eventb.core.poPredicate name="ifChange_disy" org.eventb.core.predicate="dist∈ℕ" org.eventb.core.source="/cars/main_sub_car_sys1.bum|org.eventb.core.machineFile#main_sub_car_sys1|org.eventb.core.invariant#_tPYUROwxEeqXI5MX_kpycQ"/>
+        <org.eventb.core.poPredicate name="ifChange_disz" org.eventb.core.predicate="mdata∈datatype" org.eventb.core.source="/cars/main_sub_car_sys1.bum|org.eventb.core.machineFile#main_sub_car_sys1|org.eventb.core.invariant#_tPY7UOwxEeqXI5MX_kpycQ"/>
+        <org.eventb.core.poPredicate name="ifChange_dis{" org.eventb.core.predicate="sdata∈datatype" org.eventb.core.source="/cars/main_sub_car_sys1.bum|org.eventb.core.machineFile#main_sub_car_sys1|org.eventb.core.invariant#_tPY7UewxEeqXI5MX_kpycQ"/>
+        <org.eventb.core.poPredicate name="ifChange_dis|" org.eventb.core.predicate="msd∈datatype" org.eventb.core.source="/cars/main_sub_car_sys1.bum|org.eventb.core.machineFile#main_sub_car_sys1|org.eventb.core.invariant#_tPZiYewxEeqXI5MX_kpycT"/>
+        <org.eventb.core.poPredicate name="ifChange_dis}" org.eventb.core.predicate="ifChange_dist∈BOOL" org.eventb.core.source="/cars/main_sub_car_sys1.bum|org.eventb.core.machineFile#main_sub_car_sys1|org.eventb.core.invariant#_1klPMOwyEeqXI5MX_kpycQ"/>
+        <org.eventb.core.poPredicate name="ifChange_dis~" org.eventb.core.predicate="curTime∈ℕ" org.eventb.core.source="/cars/main_sub_car_sys1.bum|org.eventb.core.machineFile#main_sub_car_sys1|org.eventb.core.invariant#_FD5kwT30EeuBjr-cya2exQ"/>
+        <org.eventb.core.poPredicate name="ifChange_dit'" org.eventb.core.predicate="ifAlarmS∈BOOL" org.eventb.core.source="/cars/main_sub_car_sys2.bum|org.eventb.core.machineFile#main_sub_car_sys2|org.eventb.core.invariant#_tPZiYewxEeqXI5MX_kpyc\\"/>
+        <org.eventb.core.poPredicate name="ifChange_dit(" org.eventb.core.predicate="alarmmsg∈msg" org.eventb.core.source="/cars/main_sub_car_sys2.bum|org.eventb.core.machineFile#main_sub_car_sys2|org.eventb.core.invariant#_tPZiYewxEeqXI5MX_kpycc"/>
+        <org.eventb.core.poPredicate name="ifChange_dit)" org.eventb.core.predicate="mdatamsg∈msg" org.eventb.core.source="/cars/main_sub_car_sys2.bum|org.eventb.core.machineFile#main_sub_car_sys2|org.eventb.core.invariant#_tPZiYewxEeqXI5MX_kpycb"/>
+        <org.eventb.core.poPredicate name="ifChange_dit*" org.eventb.core.predicate="ifAlarmM∈BOOL" org.eventb.core.source="/cars/main_sub_car_sys2.bum|org.eventb.core.machineFile#main_sub_car_sys2|org.eventb.core.invariant#_tPZiYewxEeqXI5MX_kpyc]"/>
+        <org.eventb.core.poPredicate name="ifChange_dit+" org.eventb.core.predicate="sent_msg⊆msg" org.eventb.core.source="/cars/main_sub_car_sys2.bum|org.eventb.core.machineFile#main_sub_car_sys2|org.eventb.core.invariant#_tPZiYewxEeqXI5MX_kpyce"/>
+        <org.eventb.core.poPredicate name="ifChange_dit," org.eventb.core.predicate="chan_msg⊆msg" org.eventb.core.source="/cars/main_sub_car_sys2.bum|org.eventb.core.machineFile#main_sub_car_sys2|org.eventb.core.invariant#_tPZiYewxEeqXI5MX_kpycg"/>
+        <org.eventb.core.poPredicate name="ifChange_dit-" org.eventb.core.predicate="cons_msg⊆msg" org.eventb.core.source="/cars/main_sub_car_sys2.bum|org.eventb.core.machineFile#main_sub_car_sys2|org.eventb.core.invariant#_tPZiYewxEeqXI5MX_kpyci"/>
+        <org.eventb.core.poPredicate name="ifChange_dit." org.eventb.core.predicate="if_wait∈BOOL" org.eventb.core.source="/cars/main_sub_car_sys2.bum|org.eventb.core.machineFile#main_sub_car_sys2|org.eventb.core.invariant#_fZ0XERKbEeuiu6lA9lq5nA"/>
+        <org.eventb.core.poPredicate name="ifChange_dit/" org.eventb.core.predicate="unalarmmsg∈msg" org.eventb.core.source="/cars/main_sub_car_sys2.bum|org.eventb.core.machineFile#main_sub_car_sys2|org.eventb.core.invariant#_fZ1lMBKbEeuiu6lA9lq5nA"/>
+        <org.eventb.core.poPredicate name="ifChange_dit0" org.eventb.core.predicate="if_rsvmdata∈BOOL" org.eventb.core.source="/cars/main_sub_car_sys2.bum|org.eventb.core.machineFile#main_sub_car_sys2|org.eventb.core.invariant#_5nGgoDhpEeufTrT1KShNyw"/>
+        <org.eventb.core.poPredicate name="ifChange_dit1" org.eventb.core.predicate="alarm_t∈ℕ" org.eventb.core.source="/cars/main_sub_car_sys3.bum|org.eventb.core.machineFile#main_sub_car_sys3|org.eventb.core.invariant#_tPZiYewxEeqXI5MX_kpyd\/"/>
+        <org.eventb.core.poPredicate name="ifChange_dit2" org.eventb.core.predicate="tt_dist∈BOOL" org.eventb.core.source="/cars/main_sub_car_sys3.bum|org.eventb.core.machineFile#main_sub_car_sys3|org.eventb.core.invariant#_tPZiYewxEeqXI5MX_kpyd3"/>
+        <org.eventb.core.poPredicate name="ifChange_dit3" org.eventb.core.predicate="if_rsvmdata∈BOOL" org.eventb.core.source="/cars/main_sub_car_sys3.bum|org.eventb.core.machineFile#main_sub_car_sys3|org.eventb.core.invariant#_tPZiYewxEeqXI5MX_kpyd0"/>
+        <org.eventb.core.poPredicate name="ifChange_dit4" org.eventb.core.predicate="i_dist∈ℕ" org.eventb.core.source="/cars/main_sub_car_sys3.bum|org.eventb.core.machineFile#main_sub_car_sys3|org.eventb.core.invariant#_tPZiYewxEeqXI5MX_kpyd5"/>
+        <org.eventb.core.poPredicate name="ifChange_dit5" org.eventb.core.predicate="flag_dist∈BOOL" org.eventb.core.source="/cars/main_sub_car_sys3.bum|org.eventb.core.machineFile#main_sub_car_sys3|org.eventb.core.invariant#_tPZiYewxEeqXI5MX_kpyd7"/>
+        <org.eventb.core.poPredicate name="ifChange_dit6" org.eventb.core.predicate="flag_dist=TRUE⇒cT_dist=i_dist∗dist_period" org.eventb.core.source="/cars/main_sub_car_sys3.bum|org.eventb.core.machineFile#main_sub_car_sys3|org.eventb.core.invariant#_tPZiYewxEeqXI5MX_kpyd9"/>
+        <org.eventb.core.poPredicate name="ifChange_dit7" org.eventb.core.predicate="cT_dist∈ℕ" org.eventb.core.source="/cars/main_sub_car_sys3.bum|org.eventb.core.machineFile#main_sub_car_sys3|org.eventb.core.invariant#_tPZiYewxEeqXI5MX_kpyd;"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="INITIALISATION/inv−gluing/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#EVTALLHYPstatic_propertif9"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0=0∧0=0" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.invariant#_tPZiYewxEeqXI5MX_kpydK"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/cars/main_sub_car_sys3.bum|org.eventb.core.machineFile#main_sub_car_sys3|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpycw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpyd;"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.invariant#_tPZiYewxEeqXI5MX_kpydK"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poSequent#INITIALISATION\/inv−gluing\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv28/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#EVTALLHYPstatic_propertif9"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0=0" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.invariant#_tPZiYewxEeqXI5MX_kpydM"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/cars/main_sub_car_sys3.bum|org.eventb.core.machineFile#main_sub_car_sys3|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpycw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpyd;"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.invariant#_tPZiYewxEeqXI5MX_kpydM"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poSequent#INITIALISATION\/inv28\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/act11/SIM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Action simulation" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#EVTALLHYPstatic_propertif9"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="FALSE=FALSE" org.eventb.core.source="/cars/main_sub_car_sys2.bum|org.eventb.core.machineFile#main_sub_car_sys2|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpycU|org.eventb.core.action#_HoiUcD3jEeuBjr-cya2exQ"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/cars/main_sub_car_sys3.bum|org.eventb.core.machineFile#main_sub_car_sys3|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpycw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/cars/main_sub_car_sys2.bum|org.eventb.core.machineFile#main_sub_car_sys2|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpycU|org.eventb.core.action#_HoiUcD3jEeuBjr-cya2exQ"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpyd;"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poSequent#INITIALISATION\/act11\/SIM|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTstatic_propertif9" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="5">
+        <org.eventb.core.poIdentifier name="cons_msg'" org.eventb.core.type="ℙ(msg)"/>
+        <org.eventb.core.poIdentifier name="curTime2'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="mdatamsg'" org.eventb.core.type="msg"/>
+        <org.eventb.core.poIdentifier name="mI'" org.eventb.core.type="minput"/>
+        <org.eventb.core.poIdentifier name="i_dist'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="mPWM'" org.eventb.core.type="maincarPWM"/>
+        <org.eventb.core.poIdentifier name="dist'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="ifAlarmS'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="mdata'" org.eventb.core.type="datatype"/>
+        <org.eventb.core.poIdentifier name="cT_dist'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="sent_msg'" org.eventb.core.type="ℙ(msg)"/>
+        <org.eventb.core.poIdentifier name="msd'" org.eventb.core.type="datatype"/>
+        <org.eventb.core.poIdentifier name="chan_msg'" org.eventb.core.type="ℙ(msg)"/>
+        <org.eventb.core.poIdentifier name="sI'" org.eventb.core.type="sinput"/>
+        <org.eventb.core.poIdentifier name="alarm_t'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="sPWM'" org.eventb.core.type="subcarPWM"/>
+        <org.eventb.core.poIdentifier name="curTime'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="unalarmmsg'" org.eventb.core.type="msg"/>
+        <org.eventb.core.poIdentifier name="tt_dist'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="ifChange_dist'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="alarmmsg'" org.eventb.core.type="msg"/>
+        <org.eventb.core.poIdentifier name="ifAlarmM'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="curTime1'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="sdata'" org.eventb.core.type="datatype"/>
+        <org.eventb.core.poIdentifier name="if_rsvmdata'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="flag_dist'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="if_wait'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPstatic_propertif9" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#EVTIDENTstatic_propertif9" org.eventb.core.poStamp="5"/>
+    <org.eventb.core.poPredicateSet name="EVTIDENTstatic_propertif:" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="5">
+        <org.eventb.core.poIdentifier name="mPWM'" org.eventb.core.type="maincarPWM"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPstatic_propertif:" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#EVTIDENTstatic_propertif:" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="if_wait=FALSE" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpyd=|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTstatic_propertif;" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="5">
+        <org.eventb.core.poIdentifier name="mPWM'" org.eventb.core.type="maincarPWM"/>
+        <org.eventb.core.poIdentifier name="if_wait'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPstatic_propertif;" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#EVTIDENTstatic_propertif;" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="ifAlarmM=TRUE" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpyd&gt;|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTstatic_propertif=" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="5">
+        <org.eventb.core.poIdentifier name="sPWM'" org.eventb.core.type="subcarPWM"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPstatic_propertif=" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#EVTIDENTstatic_propertif=" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="ifChange_dist=TRUE" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpyd?|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTstatic_propertif&gt;" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="5">
+        <org.eventb.core.poIdentifier name="ifChange_dist'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPstatic_propertif&gt;" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#EVTIDENTstatic_propertif&gt;" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="dist≠DISTANCE" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpyd@|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="sc_alarm_cmp/grd7/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#EVTALLHYPstatic_propertif?"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="t=curTime" org.eventb.core.source="/cars/main_sub_car_sys3.bum|org.eventb.core.machineFile#main_sub_car_sys3|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpyc}|org.eventb.core.guard#_a5pnQD58Eeu6TKzIBxIHJA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/cars/main_sub_car_sys3.bum|org.eventb.core.machineFile#main_sub_car_sys3|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpyc}"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/cars/main_sub_car_sys3.bum|org.eventb.core.machineFile#main_sub_car_sys3|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpyc}|org.eventb.core.guard#_a5pnQD58Eeu6TKzIBxIHJA"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydA"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poSequent#sc_alarm_cmp\/grd7\/GRD|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="sc_alarm_cmp/act4/SIM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Action simulation" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#EVTALLHYPstatic_propertif?"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="curTime2=curTime" org.eventb.core.source="/cars/main_sub_car_sys3.bum|org.eventb.core.machineFile#main_sub_car_sys3|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpyc}|org.eventb.core.action#_a5qOUD58Eeu6TKzIBxIHJE"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/cars/main_sub_car_sys3.bum|org.eventb.core.machineFile#main_sub_car_sys3|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpyc}"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/cars/main_sub_car_sys3.bum|org.eventb.core.machineFile#main_sub_car_sys3|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpyc}|org.eventb.core.action#_a5qOUD58Eeu6TKzIBxIHJE"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydA"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poSequent#sc_alarm_cmp\/act4\/SIM|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTstatic_propertif?" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="5">
+        <org.eventb.core.poIdentifier name="ifAlarmS'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="cT_dist'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="t" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="flag_dist'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPstatic_propertif?" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#EVTIDENTstatic_propertif?" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="dist − DISTANCE≥MAXDIST∨DISTANCE − dist≥MAXDIST" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydA|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="ifAlarmS=FALSE" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydA|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="t=curTime1" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydA|org.eventb.core.guard#_a5pnQD58Eeu6TKzIBxIHJA"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="if_rsvmdata=FALSE" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydA|org.eventb.core.guard#_-Up0oD3qEeuBjr-cya2exQ"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="t≥alarm_t+alarm_T2" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydA|org.eventb.core.guard#_-Up0oT3qEeuBjr-cya2exQ"/>
+        <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="tt_dist=TRUE∧t=i_dist∗dist_period" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydA|org.eventb.core.guard#_a5qOUD58Eeu6TKzIBxIHJB"/>
+        <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="flag_dist=FALSE" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydA|org.eventb.core.guard#_a5qOUD58Eeu6TKzIBxIHJC"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="send_alarm/GRD/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#EVTALLHYPstatic_propertif@"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="x=curTime" org.eventb.core.source="/cars/main_sub_car_sys3.bum|org.eventb.core.machineFile#main_sub_car_sys3|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpyc~|org.eventb.core.guard#_R6SqIT59Eeu6TKzIBxIHJA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/cars/main_sub_car_sys3.bum|org.eventb.core.machineFile#main_sub_car_sys3|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpyc~"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/cars/main_sub_car_sys3.bum|org.eventb.core.machineFile#main_sub_car_sys3|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpyc~|org.eventb.core.guard#_R6SqIT59Eeu6TKzIBxIHJA"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydB"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poSequent#send_alarm\/GRD\/GRD|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTstatic_propertif@" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="5">
+        <org.eventb.core.poIdentifier name="sent_msg'" org.eventb.core.type="ℙ(msg)"/>
+        <org.eventb.core.poIdentifier name="chan_msg'" org.eventb.core.type="ℙ(msg)"/>
+        <org.eventb.core.poIdentifier name="alarm_t'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="x" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="if_rsvmdata'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPstatic_propertif@" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#EVTIDENTstatic_propertif@" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="ifAlarmS=TRUE" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydB|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="alarmmsg∉sent_msg" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydB|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="x=curTime2" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydB|org.eventb.core.guard#_R6SqIT59Eeu6TKzIBxIHJA"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTstatic_propertifA" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="5">
+        <org.eventb.core.poIdentifier name="cons_msg'" org.eventb.core.type="ℙ(msg)"/>
+        <org.eventb.core.poIdentifier name="chan_msg'" org.eventb.core.type="ℙ(msg)"/>
+        <org.eventb.core.poIdentifier name="if_rsvmdata'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPstatic_propertifA" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#EVTIDENTstatic_propertifA" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="mdatamsg∈chan_msg" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydC|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="if_rsvmdata=FALSE" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydC|org.eventb.core.guard#)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTstatic_propertifB" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="5">
+        <org.eventb.core.poIdentifier name="sent_msg'" org.eventb.core.type="ℙ(msg)"/>
+        <org.eventb.core.poIdentifier name="chan_msg'" org.eventb.core.type="ℙ(msg)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPstatic_propertifB" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#EVTIDENTstatic_propertifB" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="ifAlarmM=TRUE" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydD|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="mdatamsg∉sent_msg" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydD|org.eventb.core.guard#)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTstatic_propertifC" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="5">
+        <org.eventb.core.poIdentifier name="cons_msg'" org.eventb.core.type="ℙ(msg)"/>
+        <org.eventb.core.poIdentifier name="chan_msg'" org.eventb.core.type="ℙ(msg)"/>
+        <org.eventb.core.poIdentifier name="ifAlarmM'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPstatic_propertifC" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#EVTIDENTstatic_propertifC" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="alarmmsg∈chan_msg" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydE|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTstatic_propertifD" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="5">
+        <org.eventb.core.poIdentifier name="ifAlarmS'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="sent_msg'" org.eventb.core.type="ℙ(msg)"/>
+        <org.eventb.core.poIdentifier name="chan_msg'" org.eventb.core.type="ℙ(msg)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPstatic_propertifD" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#EVTIDENTstatic_propertifD" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="if_rsvmdata=TRUE" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydF|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="ifAlarmS=TRUE" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydF|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="dist − DISTANCE≤MAXDIST∨DISTANCE − dist≤MAXDIST" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydF|org.eventb.core.guard#*"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTstatic_propertifE" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="5">
+        <org.eventb.core.poIdentifier name="cons_msg'" org.eventb.core.type="ℙ(msg)"/>
+        <org.eventb.core.poIdentifier name="chan_msg'" org.eventb.core.type="ℙ(msg)"/>
+        <org.eventb.core.poIdentifier name="ifAlarmM'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="if_wait'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPstatic_propertifE" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#EVTIDENTstatic_propertifE" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="ifAlarmM=TRUE" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydG|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="unalarmmsg∈chan_msg" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydG|org.eventb.core.guard#)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="sc_alarm_cmp_tt/grd2/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#EVTALLHYPstatic_propertifF"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="curTime=i_dist∗dist_period" org.eventb.core.source="/cars/main_sub_car_sys3.bum|org.eventb.core.machineFile#main_sub_car_sys3|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpyd1|org.eventb.core.guard#("/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/cars/main_sub_car_sys3.bum|org.eventb.core.machineFile#main_sub_car_sys3|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpyd1"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/cars/main_sub_car_sys3.bum|org.eventb.core.machineFile#main_sub_car_sys3|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpyd1|org.eventb.core.guard#("/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydH"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poSequent#sc_alarm_cmp_tt\/grd2\/GRD|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTstatic_propertifF" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="5">
+        <org.eventb.core.poIdentifier name="tt_dist'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPstatic_propertifF" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#EVTIDENTstatic_propertifF" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="tt_dist=FALSE" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydH|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="curTime2=i_dist∗dist_period" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydH|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTstatic_propertifG" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="5">
+        <org.eventb.core.poIdentifier name="i_dist'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="tt_dist'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="flag_dist'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPstatic_propertifG" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#EVTIDENTstatic_propertifG" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="flag_dist=TRUE" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydI|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="tt_dist=TRUE" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydI|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="i_dist+1∈ℕ" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydI|org.eventb.core.guard#*"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="TickTock/inv−gluing/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#EVTALLHYPstatic_propertifH"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="curTime1+1=curTime+1∧curTime2+1=curTime+1" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.invariant#_tPZiYewxEeqXI5MX_kpydK"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/cars/main_sub_car_sys3.bum|org.eventb.core.machineFile#main_sub_car_sys3|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpyd="/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydJ"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.invariant#_tPZiYewxEeqXI5MX_kpydK"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poSequent#TickTock\/inv−gluing\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="TickTock/inv28/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#EVTALLHYPstatic_propertifH"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="curTime1+1=curTime2+1" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.invariant#_tPZiYewxEeqXI5MX_kpydM"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/cars/main_sub_car_sys3.bum|org.eventb.core.machineFile#main_sub_car_sys3|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpyd="/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydJ"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.invariant#_tPZiYewxEeqXI5MX_kpydM"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poSequent#TickTock\/inv28\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="TickTock/grd1/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#EVTALLHYPstatic_propertifH"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="curTime+1∈ℕ" org.eventb.core.source="/cars/main_sub_car_sys1.bum|org.eventb.core.machineFile#main_sub_car_sys1|org.eventb.core.event#_FD6L0D30EeuBjr-cya2exQ|org.eventb.core.guard#_FD6L0T30EeuBjr-cya2exR"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/cars/main_sub_car_sys3.bum|org.eventb.core.machineFile#main_sub_car_sys3|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpyd="/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/cars/main_sub_car_sys1.bum|org.eventb.core.machineFile#main_sub_car_sys1|org.eventb.core.event#_FD6L0D30EeuBjr-cya2exQ|org.eventb.core.guard#_FD6L0T30EeuBjr-cya2exR"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydJ"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poSequent#TickTock\/grd1\/GRD|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTstatic_propertifH" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="curTime2'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="curTime'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="curTime1'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPstatic_propertifH" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#EVTIDENTstatic_propertifH" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="curTime1+1∈ℕ" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydJ|org.eventb.core.guard#_FD6L0T30EeuBjr-cya2exR"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="curTime2+1∈ℕ" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.event#_tPZiYewxEeqXI5MX_kpydJ|org.eventb.core.guard#_FD6L0T30EeuBjr-cya2exS"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/cars/main_sub_car_sys4.bpo|org.eventb.core.poFile#main_sub_car_sys4|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="curTime1=curTime∧curTime2=curTime" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.invariant#_tPZiYewxEeqXI5MX_kpydK"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="curTime1=curTime2" org.eventb.core.source="/cars/main_sub_car_sys4.bum|org.eventb.core.machineFile#main_sub_car_sys4|org.eventb.core.invariant#_tPZiYewxEeqXI5MX_kpydM"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
